@@ -34,13 +34,21 @@ header .container{
     padding:15px 0;
 }
 
-/* LOGO */
-.logo img{
-    height:65px;
-    width:auto;
+/* LOGO (CORRIGIDA) */
+.logo{
+    display:flex;
+    align-items:center;
 }
 
-/* MENU */
+.logo img{
+    height:45px;
+    width:auto;
+    max-width:160px;
+    object-fit:contain;
+    display:block;
+}
+
+/* NAV */
 nav ul{
     display:flex;
     list-style:none;
@@ -66,11 +74,6 @@ nav a:hover{
     padding:12px 25px;
     border-radius:30px;
     font-weight:600;
-    transition:0.3s;
-}
-
-.btn-header:hover{
-    transform:scale(1.05);
 }
 
 /* HERO */
@@ -107,7 +110,7 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-/* BOTÕES HERO */
+/* BOTÕES */
 .hero-buttons{
     display:flex;
     gap:20px;
@@ -119,11 +122,6 @@ nav a:hover{
     text-decoration:none;
     padding:15px 30px;
     border-radius:30px;
-    transition:0.3s;
-}
-
-.btn-primary:hover{
-    transform:scale(1.05);
 }
 
 .btn-secondary{
@@ -132,12 +130,6 @@ nav a:hover{
     text-decoration:none;
     padding:15px 30px;
     border-radius:30px;
-    transition:0.3s;
-}
-
-.btn-secondary:hover{
-    background:#d4af37;
-    color:black;
 }
 
 /* SERVIÇOS */
@@ -164,23 +156,6 @@ nav a:hover{
     border-radius:15px;
     border:1px solid rgba(212,175,55,.3);
     text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    color:#d4af37;
-    margin-bottom:15px;
-}
-
-.card span{
-    display:block;
-    margin-top:20px;
-    font-size:1.5rem;
-    font-weight:700;
 }
 
 /* SOBRE */
@@ -192,7 +167,6 @@ nav a:hover{
 
 .about h2{
     color:#d4af37;
-    margin-bottom:20px;
 }
 
 /* CONTACTO */
@@ -209,7 +183,6 @@ nav a:hover{
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
     text-align:center;
 }
 
