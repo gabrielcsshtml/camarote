@@ -34,16 +34,16 @@ header .container{
     padding:12px 0;
 }
 
-/* LOGO */
+/* LOGO (CORRIGIDO DEFINITIVO) */
 .logo{
     display:flex;
     align-items:center;
 }
 
 .logo img{
-    height:65px;
+    height:80px;        /* AUMENTADO (resolução visual) */
     width:auto;
-    max-width:200px;
+    max-width:none;     /* remove limite que fazia ficar pequena */
     object-fit:contain;
     display:block;
 }
@@ -206,12 +206,4 @@ footer{
     text-align:center;
     padding:30px;
     color:#888;
-}
-
-/* LOGO FINAL AJUSTE */
-.logo img{
-    height:65px;
-    width:auto;
-    max-width:200px;
-    object-fit:contain;
 }
