@@ -34,7 +34,7 @@ header .container{
     padding:12px 0;
 }
 
-/* LOGO (CORRIGIDO DEFINITIVO) */
+/* LOGO */
 .logo{
     display:flex;
     align-items:center;
@@ -127,7 +127,6 @@ nav a:hover{
     text-decoration:none;
     padding:15px 30px;
     border-radius:30px;
-    transition:0.3s;
 }
 
 .btn-primary:hover{
@@ -140,7 +139,6 @@ nav a:hover{
     text-decoration:none;
     padding:15px 30px;
     border-radius:30px;
-    transition:0.3s;
 }
 
 .btn-secondary:hover{
@@ -172,23 +170,6 @@ nav a:hover{
     border-radius:15px;
     border:1px solid rgba(212,175,55,.3);
     text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    color:#d4af37;
-    margin-bottom:15px;
-}
-
-.card span{
-    display:block;
-    margin-top:20px;
-    font-size:1.5rem;
-    font-weight:700;
 }
 
 /* SOBRE */
@@ -200,7 +181,6 @@ nav a:hover{
 
 .about h2{
     color:#d4af37;
-    margin-bottom:20px;
 }
 
 /* CONTACTO */
@@ -217,7 +197,6 @@ nav a:hover{
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
     text-align:center;
 }
 
@@ -227,4 +206,12 @@ footer{
     text-align:center;
     padding:30px;
     color:#888;
+}
+
+/* LOGO FINAL AJUSTE */
+.logo img{
+    height:65px;
+    width:auto;
+    max-width:200px;
+    object-fit:contain;
 }
